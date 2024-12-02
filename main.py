@@ -18,6 +18,7 @@ class Circles(QWidget, Ui_Form):
         self.color = QColor('yellow')
         self.pushButton.clicked.connect(self.click)
 
+# что нибудь
     def click(self):
         self.point = QPoint(randint(0, self.width()), randint(0, self.height()))
         self.radius = randint(1, self.width() // 2)
